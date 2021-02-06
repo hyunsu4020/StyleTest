@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>퍼스널 패션</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">퍼스널 패션</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">퍼스널 패션</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://personface.cf" target="_blank">인공지능으로 보는 나의 직업</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <sectiom>
+    <h1 class="title">인공지능이 보여주는 퍼스널 패션 Test</h1>
+    <h2 class="subtitle">당신이 지금 입고있는 패션 스타일은?</h2>
+  </sectiom>
+  <section class="youtube">
+    <div class="container mt-5 youtube-cover d-flex flex-row-reverse">
+      <img src="insta.jpg" alt="instagram" class="insta-icon">
+      <a href="https://www.instagram.com/hyuncoding/" target="_blank" title="이현수 인스타그램" class="insta-link">제작: 현코딩 인스타그램</a>
+    </div>
+    <div class="container youtube-cover d-flex flex-row-reverse">
+      <img src="youtube-copy.png" alt="youtube" class="youtube-icon">
+      <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" target="_blank" class="youtube-link">제작도움: 조코딩 유튜브 채널</a>
+    </div>
+  </section>
+  <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
+  <section class="d-flex justify-content-center">
+    <p class="d-flex align-items-center pr-3">여자</p>
+    <div>
+      <input type="checkbox" id="gender">
+      <label for="gender">
+        <span class="knob">
+          <i></i>
+        </span>
+      </label>
+    </div>
+    <p class="d-flex align-items-center pl-3">남자</p>
+  </section>
+
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <div class="container file-upload">
+    <div class="image-upload-wrap">
+      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+      <div class="drag-text">
+        <img src="upload.svg" class="mt-5 pt-5 upload">
+        <h3 class="mb-5 pd-5 pt-4 upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
+      </div>
+    </div>
+    <div class="file-upload-content">
+      <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+      <div id="loading" class="animated bounce">
+        <div class="spinner-border" role="status">
+          <span class="sr-only"></span>
+        </div>
+        <p class="text-center">AI가 당신의 스타일을 분석중입니다.</p>
+      </div>
+      <p class="result-message"></p>
+      <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+      <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+      <div class="pt-3 image-title-wrap">
+        <button type="button p-2" class="try-again-btn" onclick="window.location.reload();">
+          <span class="try-again-text">다른 사진으로 재시도</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer pt-5 container d-flex justify-content-center">
+    <div>
+      <p>&copy; hyunsu 2021. All Rights Reserved. </p>
+    </div>
+  </footer>
+  <div id="webcam-container"></div>
+
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement('script');
+      s.src = 'https://your-style.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script>
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          $('.image-upload-wrap').hide();
+          $('#loading').show();
+          $('.file-upload-image').attr('src', e.target.result);
+          $('.file-upload-content').show();
+          $('.image-title').html(input.files[0].name);
+        };
+        reader.readAsDataURL(input.files[0]);
+        init().then(function() {
+          console.log("hello");
+          predict();
+          $('#loading').hide();
+        });
+      } else {
+        removeUpload();
+      }
+    }
+
+    function removeUpload() {
+      $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+      $('.file-upload-content').hide();
+      $('.image-upload-wrap').show();
+    }
+    $('.image-upload-wrap').bind('dragover', function() {
+      $('.image-upload-wrap').addClass('image-dropping');
+    });
+    $('.image-upload-wrap').bind('dragleave', function() {
+      $('.image-upload-wrap').removeClass('image-dropping');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script type="text/javascript">
+    let URL;
+    const urlMale = "https://teachablemachine.withgoogle.com/models/FKU2pfVkk/";
+    const urlFemale = "https://teachablemachine.withgoogle.com/models/bPok3vcX6/";
+    let model, webcam, labelContainer, maxPredictions;
+    async function init() {
+      if (document.getElementById("gender").checked) {
+        URL = urlMale;
+      } else {
+        URL = urlFemale;
+      }
+      const modelURL = URL + "model.json";
+      const metadataURL = URL + "metadata.json";
+      model = await tmImage.load(modelURL, metadataURL);
+      maxPredictions = model.getTotalClasses();
+      labelContainer = document.getElementById("label-container");
+      for (let i = 0; i < maxPredictions; i++) {
+        var element = document.createElement("div")
+        element.classList.add("d-flex");
+        labelContainer.appendChild(element);
+      }
+    }
+
+    // run the webcam image through the image model
+    async function predict() {
+      // predict can take in an image, video or canvas html element
+      var image = document.getElementById("face-image")
+      const prediction = await model.predict(image, false);
+      prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+      console.log(prediction[0].className);
+      var resultTitle, resultExplain;
+      if (document.getElementById("gender").checked) {
+        switch (prediction[0].className) {
+          case "Street":
+            resultTitle = "힙한 스트릿"
+            resultExplain = "당신은 힙한 패션을 입었어요. 트렌디한 옷을 잘 살린 이태원 에서 많이 보이는 스타일이네요!!!"
+            break;
+          case "Casual":
+            resultTitle = "캐주얼 룩"
+            resultExplain = "당신은 여자들이 좋아할 만한 전형적인 남친룩을 입었어요. 흔히 입는 스타일에 멋을 더한 스타일이네요!!!"
+            break;
+          case "Daily":
+            resultTitle = "데일리 룩"
+            resultExplain = "당신은 일상생활에서 편함을 추구하는군요. 어딜가나 데일리하게 입을 수 있는 당신의 패션은 항상 편안한 느낌을 부르는 스타일이네요!!!"
+            break;
+          case "Dandy":
+            resultTitle = "댄디 룩"
+            resultExplain = "당신은 멋진 신사에요. 강남 신사역에서 자주 보이는 직장인 스타일이네요!!!"
+            break;
+          case "Vintage":
+            resultTitle = "빈티지 룩"
+            resultExplain = "당신은 취향이 확고하군요. 자기만의 스타일을 추구하는 당신은 주위에서 패션니스타 소리를 자주들을 스타일이네요!!!"
+            break;
+          default:
+            resultTitle = "알수없음"
+            resultExplain = "알수없음"
+        }
+      } else {
+        switch (prediction[0].className) {
+          case "Street":
+            resultTitle = "스트릿 룩"
+            resultExplain = "당신은 힙한 패션을 입었어요. 트렌디한 옷을 잘 살린 이태원 에서 많이 보이는 스타일이네요!!!"
+            break;
+          case "Casual":
+            resultTitle = "캐주얼 룩"
+            resultExplain = "당신은 남자들이 좋아할 만한 전형적인 여친룩을 입었어요. 흔히 입는 스타일에 멋을 더한 스타일이네요!!!"
+            break;
+          case "Daily":
+            resultTitle = "데일리 룩"
+            resultExplain = "당신은 일상생활에서 편함을 추구하는군요. 어딜가나 데일리하게 입을 수 있는 당신의 패션은 항상 편안한 느낌을 부르는 스타일이네요!!!"
+            break;
+          case "Office":
+            resultTitle = "오피스 룩"
+            resultExplain = "당신은 세련된 여성이에요. 강남 신사역에서 자주 보이는 직장인 스타일이네요!!!"
+            break;
+          case "Vintage":
+            resultTitle = "빈티지 룩"
+            resultExplain = "당신은 취향이 확고하군요. 자기만의 스타일을 추구하는 당신은 주위에서 패션니스타 소리를 자주들을 스타일이네요!!!"
+            break;
+          default:
+            resultTitle = "알수없음"
+            resultExplain = "알수없음"
+        }
+      }
+      var title = "<div class='" + prediction[0].className + "-style-title'>" + resultTitle + "</div>"
+      var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
+      $('.result-message').html(title + explain);
+      var barWidth;
+      for (let i = 0; i < maxPredictions; i++) {
+        if (prediction[i].probability.toFixed(2) > 0.1) {
+          barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+        } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+          barWidth = "4%"
+        } else {
+          barWidth = "2%"
+        }
+        var labelTitle;
+        switch (prediction[i].className) {
+          case "Street":
+            labelTitle = "스트릿 룩"
+            break;
+          case "Casual":
+            labelTitle = "캐주얼 룩"
+            break;
+          case "Daily":
+            labelTitle = "데일리 룩"
+            break;
+          case "Dandy":
+            labelTitle = "댄디 룩"
+            break;
+          case "Vintage":
+            labelTitle = "빈티지 룩"
+            break;
+            case "Office":
+              labelTitle = "오피스 룩"
+              break;
+          default:
+            labelTitle = "알수없음"
+        }
+        var label = "<div class='style-label d-flex align-items-center'>" + labelTitle + "</div>"
+        var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className +
+          "-bar' style='width: " +
+          barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+        labelContainer.childNodes[i].innerHTML = label + bar;
+      }
+    }
+  </script>
+
+</body>
+<!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+
+
+</html>
