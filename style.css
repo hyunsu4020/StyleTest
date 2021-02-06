@@ -493,3 +493,9 @@ input:checked+label>.knob>i:before {
   width: 320px;
   margin: 0 auto;
 }
+
+.fashion {
+  line-height: 1.67;
+  text-align: center;
+  color: #35465d;
+}
