@@ -199,6 +199,27 @@ body {
   text-decoration: underline;
 }
 
+.store-link {
+  font-size: 1.5rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+  text-decoration: underline;
+}
+
+.store-link:hover {
+  font-size: 1.5rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+  text-decoration: underline;
+}
+
+.storewinner {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .youtube-icon {
   width: 30px;
   height: 27.262px;
