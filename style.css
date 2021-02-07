@@ -6,7 +6,7 @@ body {
 }
 
 .file-upload {
-  padding: 15% 3%;
+  padding: 5% 0%;
   margin: 0 auto;
   border-radius: 10px;
   border: solid 1.5px #f6f7fa;
@@ -161,57 +161,57 @@ body {
 }
 
 .insta-link {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.71;
   text-align: center;
-  color: #f73737;
+  color: #68696b;
   text-decoration: underline;
 }
 
 .insta-link:hover {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.71;
   text-align: center;
-  color: #f73737;
+  color: #68696b;
   text-decoration: underline;
 }
 
 .insta-icon {
-  width: 21px;
-  height: 21px;
-  margin-right: 33px;
+  width: 17px;
+  height: 17px;
+  margin-right: 11px;
   margin-left: 5px;
 }
 
 .youtube-link {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.71;
   text-align: center;
-  color: #f73737;
+  color: #68696b;
   text-decoration: underline;
 }
 
 .youtube-link:hover {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.71;
   text-align: center;
-  color: #f73737;
+  color: #68696b;
   text-decoration: underline;
 }
 
 .store-link {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.71;
   text-align: center;
-  color: #f73737;
+  color: #68696b;
   text-decoration: underline;
 }
 
 .store-link:hover {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.71;
   text-align: center;
-  color: #f73737;
+  color: #68696b;
   text-decoration: underline;
 }
 
@@ -249,7 +249,7 @@ body {
 
 .Street-bar {
   position: absolute;
-  top: 6px;
+  top: 0px;
   left: 0;
   height: 2rem;
   border-radius: 10px;
