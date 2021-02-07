@@ -42,6 +42,24 @@
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-601e879e6e4c3714"></script>
 
   <meta name="naver-site-verification" content="94772fee614c61bd0eb1b4a80c951845b976d358" />
+
+  <script language="JavaScript">
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    hitCt = eval(cookieVal("pageHit"))
+    hitCt++
+    document.cookie = "pageHit=" + hitCt + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+      thisCookie = document.cookie.split("; ")
+      for (i = 0; i < thisCookie.length; i++) {
+        if (cookieName == thisCookie[i].split("=")[0]) {
+          return thisCookie[i].split("=")[1]
+        }
+      }
+      return 0
+    }
+  </script>
 </head>
 
 <body>
@@ -104,6 +122,7 @@
         <img src="upload.svg" class="mt-5 pt-5 upload">
         <h3 class="mb-5 pd-5 pt-4 upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
       </div>
+
     </div>
     <div class="file-upload-content">
       <img class="file-upload-image" id="face-image" src="#" alt="your image" />
@@ -130,215 +149,221 @@
     </div>
   </div>
 
-  <div class="storewinner">
-    <a href="http://search.11st.co.kr/Search.tmall?kwd=%25EC%258A%25A4%25ED%2586%25A0%25EC%2596%25B4%25EC%259C%2584%25EB%2584%2588&code=1033&utm_term=%BD%BA%C5%E4%BE%EE%C0%A7%B3%CA&utm_campaign=1022+%C8%AE%C0%E5%C0%CF%B9%DD%C0%CF%C4%A1_15&utm_source=%B3%D7%C0%CC%B9%F6_PC_S&utm_medium=%B0%CB%BB%F6"
-      target="_blank" class="store-link">스토어위너 바로가기</a>
-    <img src="storewinner.jpg" alt="스토어위너" class="ad-banner">
-  </div>
-  <div class="ad-banner">
-    <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-IxWYiuBvxtN88IMw" data-ad-width="320" data-ad-height="100"></ins>
-    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-  </div>
-  <div class="ad-banner">
-    <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-ux368QWoO58WxxTl" data-ad-width="320" data-ad-height="100"></ins>
-    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-  </div>
+  <H3 align=center>
+    <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+      document.write("제 홈페이지에 <font color=red>" + hitCt + "</font> 번째 방문자이시네요.")
+      //-->
+    </SCRIPT>
 
-  <footer class="footer pt-5 container d-flex justify-content-center">
-    <div>
-      <p>&copy; hyunsu 2021. All Rights Reserved. </p>
+    <div class="storewinner">
+      <a href="http://search.11st.co.kr/Search.tmall?kwd=%25EC%258A%25A4%25ED%2586%25A0%25EC%2596%25B4%25EC%259C%2584%25EB%2584%2588&code=1033&utm_term=%BD%BA%C5%E4%BE%EE%C0%A7%B3%CA&utm_campaign=1022+%C8%AE%C0%E5%C0%CF%B9%DD%C0%CF%C4%A1_15&utm_source=%B3%D7%C0%CC%B9%F6_PC_S&utm_medium=%B0%CB%BB%F6"
+        target="_blank" class="store-link">스토어위너 바로가기</a>
+      <img src="storewinner.jpg" alt="스토어위너" class="ad-banner">
     </div>
-  </footer>
-  <div id="webcam-container"></div>
+    <div class="ad-banner">
+      <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-IxWYiuBvxtN88IMw" data-ad-width="320" data-ad-height="100"></ins>
+      <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    </div>
+    <div class="ad-banner">
+      <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-ux368QWoO58WxxTl" data-ad-width="320" data-ad-height="100"></ins>
+      <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    </div>
 
-  <div id="disqus_thread"></div>
-  <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document,
-        s = d.createElement('script');
-      s.src = 'https://your-style.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <footer class="footer pt-5 container d-flex justify-content-center">
+      <div>
+        <p>&copy; hyunsu 2021. All Rights Reserved. </p>
+      </div>
+    </footer>
+    <div id="webcam-container"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-  <script>
-    function readURL(input) {
-      if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function(e) {
-          $('.image-upload-wrap').hide();
-          $('#loading').show();
-          $('.file-upload-image').attr('src', e.target.result);
-          $('.file-upload-content').show();
-          $('.image-title').html(input.files[0].name);
-        };
-        reader.readAsDataURL(input.files[0]);
-        init().then(function() {
-          console.log("hello");
-          predict();
-          $('#loading').hide();
-        });
-      } else {
-        removeUpload();
-      }
-    }
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        s.src = 'https://your-style.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-    function removeUpload() {
-      $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-      $('.file-upload-content').hide();
-      $('.image-upload-wrap').show();
-    }
-    $('.image-upload-wrap').bind('dragover', function() {
-      $('.image-upload-wrap').addClass('image-dropping');
-    });
-    $('.image-upload-wrap').bind('dragleave', function() {
-      $('.image-upload-wrap').removeClass('image-dropping');
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-  <script type="text/javascript">
-    let URL;
-    const urlMale = "https://teachablemachine.withgoogle.com/models/FKU2pfVkk/";
-    const urlFemale = "https://teachablemachine.withgoogle.com/models/bPok3vcX6/";
-    let model, webcam, labelContainer, maxPredictions;
-    async function init() {
-      if (document.getElementById("gender").checked) {
-        URL = urlMale;
-      } else {
-        URL = urlFemale;
-      }
-      const modelURL = URL + "model.json";
-      const metadataURL = URL + "metadata.json";
-      model = await tmImage.load(modelURL, metadataURL);
-      maxPredictions = model.getTotalClasses();
-      labelContainer = document.getElementById("label-container");
-      for (let i = 0; i < maxPredictions; i++) {
-        var element = document.createElement("div")
-        element.classList.add("d-flex");
-        labelContainer.appendChild(element);
-      }
-    }
-
-    // run the webcam image through the image model
-    async function predict() {
-      // predict can take in an image, video or canvas html element
-      var image = document.getElementById("face-image")
-      const prediction = await model.predict(image, false);
-      prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-      console.log(prediction[0].className);
-      var resultTitle, resultExplain;
-      if (document.getElementById("gender").checked) {
-        switch (prediction[0].className) {
-          case "Street":
-            resultTitle = "힙한 스트릿"
-            resultExplain = "당신은 힙한 패션을 입었어요. 트렌디한 옷을 잘 살린 이태원 에서 많이 보이는 스타일이네요!!!"
-            break;
-          case "Casual":
-            resultTitle = "캐주얼 룩"
-            resultExplain = "당신은 여자들이 좋아할 만한 전형적인 남친룩을 입었어요. 흔히 입는 스타일에 멋을 더한 스타일이네요!!!"
-            break;
-          case "Daily":
-            resultTitle = "데일리 룩"
-            resultExplain = "당신은 일상생활에서 편함을 추구하는군요. 어딜가나 데일리하게 입을 수 있는 당신의 패션은 항상 편안한 느낌을 부르는 스타일이네요!!!"
-            break;
-          case "Dandy":
-            resultTitle = "댄디 룩"
-            resultExplain = "당신은 멋진 신사에요. 강남 신사역에서 자주 보이는 직장인 스타일이네요!!!"
-            break;
-          case "Vintage":
-            resultTitle = "빈티지 룩"
-            resultExplain = "당신은 취향이 확고하군요. 자기만의 스타일을 추구하는 당신은 주위에서 패션니스타 소리를 자주들을 스타일이네요!!!"
-            break;
-          default:
-            resultTitle = "알수없음"
-            resultExplain = "알수없음"
-        }
-      } else {
-        switch (prediction[0].className) {
-          case "Street":
-            resultTitle = "스트릿 룩"
-            resultExplain = "당신은 힙한 패션을 입었어요. 트렌디한 옷을 잘 살린 이태원 에서 많이 보이는 스타일이네요!!!"
-            break;
-          case "Casual":
-            resultTitle = "캐주얼 룩"
-            resultExplain = "당신은 남자들이 좋아할 만한 전형적인 여친룩을 입었어요. 흔히 입는 스타일에 멋을 더한 스타일이네요!!!"
-            break;
-          case "Daily":
-            resultTitle = "데일리 룩"
-            resultExplain = "당신은 일상생활에서 편함을 추구하는군요. 어딜가나 데일리하게 입을 수 있는 당신의 패션은 항상 편안한 느낌을 부르는 스타일이네요!!!"
-            break;
-          case "Office":
-            resultTitle = "오피스 룩"
-            resultExplain = "당신은 세련된 여성이에요. 강남 신사역에서 자주 보이는 직장인 스타일이네요!!!"
-            break;
-          case "Vintage":
-            resultTitle = "빈티지 룩"
-            resultExplain = "당신은 취향이 확고하군요. 자기만의 스타일을 추구하는 당신은 주위에서 패션니스타 소리를 자주들을 스타일이네요!!!"
-            break;
-          default:
-            resultTitle = "알수없음"
-            resultExplain = "알수없음"
-        }
-      }
-      var title = "<div class='" + prediction[0].className + "-style-title'>" + resultTitle + "</div>"
-      var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
-      $('.result-message').html(title + explain);
-      var barWidth;
-      for (let i = 0; i < maxPredictions; i++) {
-        if (prediction[i].probability.toFixed(2) > 0.1) {
-          barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-        } else if (prediction[i].probability.toFixed(2) >= 0.01) {
-          barWidth = "4%"
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            $('.image-upload-wrap').hide();
+            $('#loading').show();
+            $('.file-upload-image').attr('src', e.target.result);
+            $('.file-upload-content').show();
+            $('.image-title').html(input.files[0].name);
+          };
+          reader.readAsDataURL(input.files[0]);
+          init().then(function() {
+            console.log("hello");
+            predict();
+            $('#loading').hide();
+          });
         } else {
-          barWidth = "2%"
+          removeUpload();
         }
-        var labelTitle;
-        switch (prediction[i].className) {
-          case "Street":
-            labelTitle = "스트릿 룩"
-            break;
-          case "Casual":
-            labelTitle = "캐주얼 룩"
-            break;
-          case "Daily":
-            labelTitle = "데일리 룩"
-            break;
-          case "Dandy":
-            labelTitle = "댄디 룩"
-            break;
-          case "Vintage":
-            labelTitle = "빈티지 룩"
-            break;
-          case "Office":
-            labelTitle = "오피스 룩"
-            break;
-          default:
-            labelTitle = "알수없음"
-        }
-        var label = "<div class='style-label d-flex align-items-center'>" + labelTitle + "</div>"
-        var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className +
-          "-bar' style='width: " +
-          barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-        labelContainer.childNodes[i].innerHTML = label + bar;
       }
-    }
-  </script>
+
+      function removeUpload() {
+        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+        $('.file-upload-content').hide();
+        $('.image-upload-wrap').show();
+      }
+      $('.image-upload-wrap').bind('dragover', function() {
+        $('.image-upload-wrap').addClass('image-dropping');
+      });
+      $('.image-upload-wrap').bind('dragleave', function() {
+        $('.image-upload-wrap').removeClass('image-dropping');
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script type="text/javascript">
+      let URL;
+      const urlMale = "https://teachablemachine.withgoogle.com/models/FKU2pfVkk/";
+      const urlFemale = "https://teachablemachine.withgoogle.com/models/bPok3vcX6/";
+      let model, webcam, labelContainer, maxPredictions;
+      async function init() {
+        if (document.getElementById("gender").checked) {
+          URL = urlMale;
+        } else {
+          URL = urlFemale;
+        }
+        const modelURL = URL + "model.json";
+        const metadataURL = URL + "metadata.json";
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) {
+          var element = document.createElement("div")
+          element.classList.add("d-flex");
+          labelContainer.appendChild(element);
+        }
+      }
+
+      // run the webcam image through the image model
+      async function predict() {
+        // predict can take in an image, video or canvas html element
+        var image = document.getElementById("face-image")
+        const prediction = await model.predict(image, false);
+        prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+        console.log(prediction[0].className);
+        var resultTitle, resultExplain;
+        if (document.getElementById("gender").checked) {
+          switch (prediction[0].className) {
+            case "Street":
+              resultTitle = "힙한 스트릿"
+              resultExplain = "당신은 힙한 패션을 입었어요. 트렌디한 옷을 잘 살린 이태원 에서 많이 보이는 스타일이네요!!!"
+              break;
+            case "Casual":
+              resultTitle = "캐주얼 룩"
+              resultExplain = "당신은 여자들이 좋아할 만한 전형적인 남친룩을 입었어요. 흔히 입는 스타일에 멋을 더한 스타일이네요!!!"
+              break;
+            case "Daily":
+              resultTitle = "데일리 룩"
+              resultExplain = "당신은 일상생활에서 편함을 추구하는군요. 어딜가나 데일리하게 입을 수 있는 당신의 패션은 항상 편안한 느낌을 부르는 스타일이네요!!!"
+              break;
+            case "Dandy":
+              resultTitle = "댄디 룩"
+              resultExplain = "당신은 멋진 신사에요. 강남 신사역에서 자주 보이는 직장인 스타일이네요!!!"
+              break;
+            case "Vintage":
+              resultTitle = "빈티지 룩"
+              resultExplain = "당신은 취향이 확고하군요. 자기만의 스타일을 추구하는 당신은 주위에서 패션니스타 소리를 자주들을 스타일이네요!!!"
+              break;
+            default:
+              resultTitle = "알수없음"
+              resultExplain = "알수없음"
+          }
+        } else {
+          switch (prediction[0].className) {
+            case "Street":
+              resultTitle = "스트릿 룩"
+              resultExplain = "당신은 힙한 패션을 입었어요. 트렌디한 옷을 잘 살린 이태원 에서 많이 보이는 스타일이네요!!!"
+              break;
+            case "Casual":
+              resultTitle = "캐주얼 룩"
+              resultExplain = "당신은 남자들이 좋아할 만한 전형적인 여친룩을 입었어요. 흔히 입는 스타일에 멋을 더한 스타일이네요!!!"
+              break;
+            case "Daily":
+              resultTitle = "데일리 룩"
+              resultExplain = "당신은 일상생활에서 편함을 추구하는군요. 어딜가나 데일리하게 입을 수 있는 당신의 패션은 항상 편안한 느낌을 부르는 스타일이네요!!!"
+              break;
+            case "Office":
+              resultTitle = "오피스 룩"
+              resultExplain = "당신은 세련된 여성이에요. 강남 신사역에서 자주 보이는 직장인 스타일이네요!!!"
+              break;
+            case "Vintage":
+              resultTitle = "빈티지 룩"
+              resultExplain = "당신은 취향이 확고하군요. 자기만의 스타일을 추구하는 당신은 주위에서 패션니스타 소리를 자주들을 스타일이네요!!!"
+              break;
+            default:
+              resultTitle = "알수없음"
+              resultExplain = "알수없음"
+          }
+        }
+        var title = "<div class='" + prediction[0].className + "-style-title'>" + resultTitle + "</div>"
+        var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
+        $('.result-message').html(title + explain);
+        var barWidth;
+        for (let i = 0; i < maxPredictions; i++) {
+          if (prediction[i].probability.toFixed(2) > 0.1) {
+            barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+          } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+            barWidth = "4%"
+          } else {
+            barWidth = "2%"
+          }
+          var labelTitle;
+          switch (prediction[i].className) {
+            case "Street":
+              labelTitle = "스트릿 룩"
+              break;
+            case "Casual":
+              labelTitle = "캐주얼 룩"
+              break;
+            case "Daily":
+              labelTitle = "데일리 룩"
+              break;
+            case "Dandy":
+              labelTitle = "댄디 룩"
+              break;
+            case "Vintage":
+              labelTitle = "빈티지 룩"
+              break;
+            case "Office":
+              labelTitle = "오피스 룩"
+              break;
+            default:
+              labelTitle = "알수없음"
+          }
+          var label = "<div class='style-label d-flex align-items-center'>" + labelTitle + "</div>"
+          var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className +
+            "-bar' style='width: " +
+            barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+          labelContainer.childNodes[i].innerHTML = label + bar;
+        }
+      }
+    </script>
 
 </body>
 <!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
