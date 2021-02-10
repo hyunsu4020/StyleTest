@@ -520,7 +520,7 @@ input:checked+label>.knob>i:before {
   color: #3ba363;
 }
 
-.animal-explain {
+.style-explain {
   margin-left: 90px;
   margin-right: 90px;
   margin-bottom: 20px;
@@ -532,7 +532,7 @@ input:checked+label>.knob>i:before {
     font-size: 6px;
   }
 
-  .animal-explain {}
+  .style-explain {}
 
   .styleceleb {}
 
@@ -560,4 +560,28 @@ input:checked+label>.knob>i:before {
   color: #353535;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.Street-style-explain {
+  color: #3ba363;
+}
+
+.Casual-style-explain {
+  color: #3ba363;
+}
+
+.Daily-style-explain {
+  color: #3ba363;
+}
+
+.Dandy-style-explain {
+  color: #3ba363;
+}
+
+.Vintage-style-explain {
+  color: #3ba363;
+}
+
+.Office-style-explain {
+  color: #3ba363;
 }
