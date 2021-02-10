@@ -585,3 +585,9 @@ input:checked+label>.knob>i:before {
 .Office-style-explain {
   color: #7b6ebf;
 }
+
+.styleexplain {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
