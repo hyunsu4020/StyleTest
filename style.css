@@ -348,7 +348,7 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(235, 166, 190, 1);
+  background-color: #7b6ebf;
 }
 
 .Office-box {
@@ -358,7 +358,7 @@ body {
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(235, 166, 190, 0.2);
+  background-color: rgba(123, 110, 191, 0.2);
 }
 
 .Street-style-title {
@@ -366,11 +366,11 @@ body {
 }
 
 .Casual-style-title {
-  color: #3ba363;
+  color: #1bafea;
 }
 
 .Daily-style-title {
-  color: #3ba363;
+  color: #fbb03b;
 }
 
 .Dandy-style-title {
@@ -378,11 +378,11 @@ body {
 }
 
 .Vintage-style-title {
-  color: #3ba363;
+  color: #eba6be;
 }
 
 .Office-style-title {
-  color: #3ba363;
+  color: #7b6ebf;
 }
 
 label {
@@ -567,11 +567,11 @@ input:checked+label>.knob>i:before {
 }
 
 .Casual-style-explain {
-  color: #3ba363;
+  color: #1bafea;
 }
 
 .Daily-style-explain {
-  color: #3ba363;
+  color: #fbb03b;
 }
 
 .Dandy-style-explain {
@@ -579,9 +579,9 @@ input:checked+label>.knob>i:before {
 }
 
 .Vintage-style-explain {
-  color: #3ba363;
+  color: #eba6be;
 }
 
 .Office-style-explain {
-  color: #3ba363;
+  color: #7b6ebf;
 }
