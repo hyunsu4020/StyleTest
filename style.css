@@ -523,6 +523,7 @@ input:checked+label>.knob>i:before {
 .animal-explain {
   margin-left: 90px;
   margin-right: 90px;
+  margin-bottom: 20px;
 }
 
 /* On screens that are 600px or less, set the background color to olive */
