@@ -591,3 +591,8 @@ input:checked+label>.knob>i:before {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.visitor {
+  text-align: center;
+  font-size: 3rem;
+}
