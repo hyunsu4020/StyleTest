@@ -399,7 +399,7 @@ label {
   width: 20%;
   text-align: left;
   height: 2rem;
-  font-size: 120%;
+  font-size: 180%;
 }
 
 #label-container {
@@ -502,27 +502,22 @@ input:checked+label>.knob>i:before {
 
 .Street-style-celeb {
   color: #3ba363;
-  font-size: 1.2rem;
 }
 
 .Casual-style-celeb {
   color: #3ba363;
-  font-size: 1.2rem;
 }
 
 .Daily-style-celeb {
   color: #3ba363;
-  font-size: 1.2rem;
 }
 
 .Dandy-style-celeb {
   color: #3ba363;
-  font-size: 1.2rem;
 }
 
 .Vintage-style-celeb {
   color: #3ba363;
-  font-size: 1.2rem;
 }
 
 .animal-explain {
@@ -544,17 +539,14 @@ input:checked+label>.knob>i:before {
 .styleceleb {
   margin-bottom: 15px;
   color: #353535;
-  font-size: 1.2rem;
 }
 
 .stylefashion {
   margin-bottom: 15px;
   color: #353535;
-  font-size: 1.2rem;
 }
 
 .stylecolor {
   margin-bottom: 15px;
   color: #353535;
-  font-size: 1.2rem;
 }
