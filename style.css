@@ -499,3 +499,69 @@ input:checked+label>.knob>i:before {
   text-align: center;
   color: #35465d;
 }
+
+.Street-style-celeb {
+  color: #3ba363;
+  font-size: 1.2rem;
+}
+
+.Casual-style-celeb {
+  color: #3ba363;
+  font-size: 1.2rem;
+}
+
+.Daily-style-celeb {
+  color: #3ba363;
+  font-size: 1.2rem;
+}
+
+.Dandy-style-celeb {
+  color: #3ba363;
+  font-size: 1.2rem;
+}
+
+.Vintage-style-celeb {
+  color: #3ba363;
+  font-size: 1.2rem;
+}
+
+.animal-explain {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+
+  .animal-explain {}
+  .styleceleb {}
+  .stylefashion {}
+  .stylecolor {}
+}
+
+.styleceleb {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 15px;
+  color: #353535;
+  font-size: 1.2rem;
+}
+
+.stylefashion {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 15px;
+  color: #353535;
+  font-size: 1.2rem;
+}
+
+.stylecolor {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 15px;
+  color: #353535;
+  font-size: 1.2rem;
+}
