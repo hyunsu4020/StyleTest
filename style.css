@@ -531,23 +531,33 @@ input:checked+label>.knob>i:before {
   html {
     font-size: 6px;
   }
+
   .animal-explain {}
+
   .styleceleb {}
+
   .stylefashion {}
+
   .stylecolor {}
 }
 
 .styleceleb {
   margin-bottom: 15px;
   color: #353535;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .stylefashion {
   margin-bottom: 15px;
   color: #353535;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .stylecolor {
   margin-bottom: 15px;
   color: #353535;
+  margin-left: 20px;
+  margin-right: 20px;
 }
