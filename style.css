@@ -535,7 +535,6 @@ input:checked+label>.knob>i:before {
   html {
     font-size: 6px;
   }
-
   .animal-explain {}
   .styleceleb {}
   .stylefashion {}
@@ -543,24 +542,18 @@ input:checked+label>.knob>i:before {
 }
 
 .styleceleb {
-  margin-left: 90px;
-  margin-right: 90px;
   margin-bottom: 15px;
   color: #353535;
   font-size: 1.2rem;
 }
 
 .stylefashion {
-  margin-left: 90px;
-  margin-right: 90px;
   margin-bottom: 15px;
   color: #353535;
   font-size: 1.2rem;
 }
 
 .stylecolor {
-  margin-left: 90px;
-  margin-right: 90px;
   margin-bottom: 15px;
   color: #353535;
   font-size: 1.2rem;
